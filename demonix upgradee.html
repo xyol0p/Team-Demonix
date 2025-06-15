@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Demonix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    h2 {
+      color: #ff4081;
+      font-weight: 400;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 5px solid #ff4081;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    .members {
+      margin-top: 40px;
+    }
+    .members h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #0ff;
+    }
+    .members ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+    .members li {
+      margin: 5px 0;
+    }
+    .social-icons {
+      margin-top: 30px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ff4081;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #fff;
+    }
+    button {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      margin-top: 20px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff79a5;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #0ff;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Team Demonix</h1>
+  <h2>💥 Dark. Ruthless. United. 💥</h2>
+
+  <img src="download.jpeg" alt="Team Demonix Emblem">
+
+  <p>Welcome to Team Demonix — a dark and dominating force united by strength, mystery, and chaos. Join the legacy. 💀🔥</p>
+
+  <button onclick="showLove()">Join the Demonix League 🩸</button>
+  <div class="message" id="loveMessage">You're now part of the Demonix Brotherhood! 🦴</div>
+
+  <div class="members">
+    <h3>🔥 Core Members 🔥</h3>
+    <ul>
+      <li>👑 Shadow Lord</li>
+      <li>⚔️ Crimson Viper</li>
+      <li>💀 Phantom Fist</li>
+      <li>🧠 Dark Oracle</li>
+    </ul>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/xyol0p/?next=%2F" target="_blank">📸 Instagram</a>
+    <a href="https://discord.gg/yourserver" target="_blank">💬 Discord</a>
+    <a href="mailto:teamdemonix@darkmail.com">📧 Email</a>
+  </div>
+
+  <audio autoplay loop hidden>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function showLove() {
+      const msg = document.getElementById('loveMessage');
+      msg.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
